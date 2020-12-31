@@ -1,5 +1,4 @@
 import React from 'react';
-import '../styles/Historia.css'
 import Footer from './Footer';
 
 function Historia() {

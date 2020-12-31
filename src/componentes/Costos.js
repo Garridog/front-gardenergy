@@ -1,5 +1,4 @@
 import React from 'react';
-import '../styles/costos.css';
 import Footer from './Footer';
 
 function Costos(){

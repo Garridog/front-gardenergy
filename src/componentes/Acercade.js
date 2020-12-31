@@ -1,5 +1,4 @@
 import React from 'react';
-import '../styles/acercade.css'
 import '../componentes/Footer';
 import Footer from '../componentes/Footer';
 

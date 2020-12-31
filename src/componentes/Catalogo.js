@@ -1,5 +1,4 @@
 import React from 'react';
-import '../styles/catalogo.css';
 import Violeta from '../img/violetaafricana.jpg';
 import Costilla from '../img/costillaadan.jpg';
 import Anturio from '../img/anturiorojo.jpg';

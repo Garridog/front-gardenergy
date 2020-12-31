@@ -2,7 +2,6 @@ import React from 'react';
 import jardinera from '../img/jardinera.png'
 import jardinera2 from '../img/jardinera2.png'
 import jardinera3 from '../img/jardinera3.png'
-import '../styles/producto.css';
 import Footer from './Footer';
 
 function Productos() {

@@ -1,6 +1,5 @@
 import React from 'react';
 import Adm from '../img/imgadmin.svg';
-import '../styles/login.css';
 import Footer from './Footer';
 
 function Login(){
