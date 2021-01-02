@@ -1,9 +1,9 @@
 import React from 'react';
-import '../styles/producto.css';
 import jardinera from '../img/jardinera.png'
 import jardinera2 from '../img/jardinera2.png'
 import jardinera3 from '../img/jardinera3.png'
 import Footer from './Footer';
+import '../styles/productos.css';
 
 function Productos() {
     return (
