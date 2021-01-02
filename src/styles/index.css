@@ -1,3 +1,12 @@
 body{
     background-image: url("../img/Sitio\ Web\ Moderno\ Minimalista\ Color\ Poster\ Background.jfif");
 }
+
+.Redes{
+    position: fixed;
+    left: 1%;
+    top: 85%;
+    display: flex;
+    align-items: flex-end;
+    z-index: 100;
+}

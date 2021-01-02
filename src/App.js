@@ -10,12 +10,16 @@ import Catalogo from './componentes/Catalogo';
 import Login from './componentes/Login';
 import Contacto from './componentes/Contacto';
 import Footer from './componentes/Footer';
+import Ubicacion from './componentes/Ubicacion';
 
 function App() {
   return (
     <BrowserRouter>
       <Header></Header>
         <Switch>
+          <Route path="/Ubicacion">
+            <Ubicacion></Ubicacion>
+          </Route>
           <Route path="/Contacto">
             <Contacto></Contacto>
           </Route>

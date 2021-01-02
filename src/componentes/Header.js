@@ -45,6 +45,11 @@ function Header(){
                 Catalogo
                 </Link>
               </li>
+              <li className="nav-item">
+                <Link to="/Ubicacion" className="nav-link">
+                  Ubicación
+                </Link>
+              </li>
             </ul>
             <Link to="/Contacto">
             <button type="button" className="btn btn-outline-primary">Contacto</button>
