@@ -1,4 +1,5 @@
 import React from 'react';
+import '../styles/login.css';
 import Adm from '../img/imgadmin.svg';
 import Footer from './Footer';
 

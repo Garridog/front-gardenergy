@@ -1,4 +1,5 @@
 import React from 'react';
+import '../styles/contacto.css';
 import Imgcon from '../img/imgcontact.svg';
 import Footer from './Footer';
 

@@ -1,6 +1,7 @@
 import React from 'react';
 import '../componentes/Footer';
 import Footer from '../componentes/Footer';
+import '../styles/acercade.css';
 
 function Acercade() {
     return (
