@@ -1,5 +1,4 @@
 import React from 'react';
-import '../styles/catalogo.css';
 import Violeta from '../img/violetaafricana.jpg';
 import Costilla from '../img/costillaadan.jpg';
 import Anturio from '../img/anturiorojo.jpg';
@@ -11,6 +10,7 @@ import Peperomia from '../img/peperomia.jpg';
 import Espatifilo from '../img/espatifilo.jpg';
 import Espina from '../img/espina.jpg';
 import Footer from './Footer';
+import '../styles/catalogo.css';
 
 function Catalogo() {
     return (
