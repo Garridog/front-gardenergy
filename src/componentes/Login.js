@@ -16,15 +16,14 @@ function Login(props) {
 
     const handleLogin = () => {
         setLoading(true);
-        axios.post("http://localhost:4001/validauser", 
+        axios
+        .post("http://localhost:4001/validauser", 
         {username: username.value, password: password.value}).
-        then(response => {
+        then((response) => {
             console.log(response.data);    
             if (response.data == "Usuario Valido"){
                 setUserSession(username.value);
-               // return <Redirect to="/Administrador"/>
                 window.location.href = '/Administrador'
-            // props.history.push("/Administrador");
             } else {
                 setError("Usuario Invalido");
                 setLoading(false);
