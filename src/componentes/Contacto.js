@@ -23,10 +23,7 @@ function Contacto(){
     const mostrarAlerta=()=>{
         swal("Datos enviados correctamente");
     }
-    let cleanForm = e => {
-        e.preventDefault();
-        
-    }
+
 
     return(
         <div>
@@ -56,7 +53,6 @@ function Contacto(){
                     <textarea className="form-control" name="message" id="exampleFormControlTextarea1" rows="4"></textarea>
                   </div>
                   <button className="btn btn-success" onClick={()=>mostrarAlerta()}>Enviar</button>
-                  <button className="btn btn-danger ms-2">Limpiar Formulario</button>
                 </form>
             </div>
         </div>

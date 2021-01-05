@@ -6,7 +6,7 @@ import Logout from './logout';
 function Administrador(props){
 
     if (getUser() == "") {
-        return <Redirect to="/Login" />
+        window.location.href = '/Administrador'
     }
 
     return(

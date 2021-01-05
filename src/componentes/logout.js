@@ -10,7 +10,7 @@ function Logout(props) {
 
     const handleLogout = () =>{
         removeSession();
-        return <Redirect to="/Login" />
+        window.location.href = '/Login'
     }
 
     return <div><input className="logout" type="button" onClick={handleLogout} value="salir" /></div>
