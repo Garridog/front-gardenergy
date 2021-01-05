@@ -11,9 +11,9 @@ function Index(){
     return(
         <div className="container">
              <div id="redessociales">
-                    <a class="smedia facebook" target="_blank" href="https://www.facebook.com/GardenergyMx-102859605080826/?view_public_for=102859605080826">Uno</a>
-                    <a class="smedia twitter" target="_blank" href="https://twitter.com/gardenergy">Dos</a>
-                    <a class="smedia instagram" target="_blank" href="https://www.instagram.com/gardenergy.mx/">Tres</a>
+                    <a className="smedia facebook" target="_blank" href="https://www.facebook.com/GardenergyMx-102859605080826/?view_public_for=102859605080826">Uno</a>
+                    <a className="smedia twitter" target="_blank" href="https://twitter.com/gardenergy">Dos</a>
+                    <a className="smedia instagram" target="_blank" href="https://www.instagram.com/gardenergy.mx/">Tres</a>
             </div>
             <div className="row">
                 <div className="col-sm mt-5">

@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter, Switch, Route, Link, Redirect } from "react-router-dom";
 import Header from './componentes/Header';
 import Index from './componentes/index';
 import Historia from './componentes/Historia';
@@ -11,12 +11,16 @@ import Login from './componentes/Login';
 import Contacto from './componentes/Contacto';
 import Footer from './componentes/Footer';
 import Ubicacion from './componentes/Ubicacion';
+import Administrador from './componentes/Administrador';
 
 function App() {
   return (
     <BrowserRouter>
       <Header></Header>
         <Switch>
+          <Route path="/Administrador">
+            <Administrador></Administrador>
+          </Route>
           <Route path="/Ubicacion">
             <Ubicacion></Ubicacion>
           </Route>

@@ -1,9 +1,38 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { setUserSession } from '../utils/Common';
+import axios from 'axios';
+import { Redirect, withRouter, Link } from 'react-router-dom';
+
 import '../styles/login.css';
 import Adm from '../img/imgadmin.svg';
 import Footer from './Footer';
+import Administrador from './Administrador';
 
-function Login(){
+function Login(props) {
+    const [Loading, setLoading] = useState(false);
+    const[error, setError] = useState(null);
+    const username = GetInputValue("");
+    const password = GetInputValue("");
+
+    const handleLogin = () => {
+        setLoading(true);
+        axios.post("http://localhost:4001/validauser", 
+        {username: username.value, password: password.value}).
+        then(response => {
+            console.log(response.data);    
+            if (response.data == "Usuario Valido"){
+                setUserSession(username.value);
+               // return <Redirect to="/Administrador"/>
+                window.location.href = '/Administrador'
+            // props.history.push("/Administrador");
+            } else {
+                setError("Usuario Invalido");
+                setLoading(false);
+        }
+        }).catch();
+    };
+
+
     return(
         <div>
         <div className="container mt-5 shadow p-3 mb-5 bg-white rounded lcontainer">
@@ -16,18 +45,21 @@ function Login(){
                     <hr/>
                     <h2 className="text-center mt-3">Inicia Sesion</h2>
                     <div className="mb-3 text-center">
-                        <label for="exampleInputEmail1" className="form-label">Usuario</label>
-                        <input type="text" className="form-control" name="usuario" aria-describedby="emailHelp"/>
-                        <label for="exampleInputPassword1" className="form-label">Contraseña</label>
-                        <input type="password" className="form-control" name="password"/>
-                        <button type="submit" value="send" className="btn btn-primary mx-auto d-block mt-3">Inicia Sesion</button>
+                        <label htmlFor="exampleInputEmail1" className="form-label">Usuario</label>
+                        <input type="text" className="form-control" {...username} aria-describedby="emailHelp"/>
+                        <label htmlFor="exampleInputPassword1" className="form-label">Contraseña</label>
+                        <input type="password" className="form-control" {...password}/>
+                        <label>{error}</label>
+                        <input type="button" value={Loading ? 'Cargando...' : 'Entrar'}
+                        disabled={Loading} 
+                        className="btn btn-primary mx-auto d-block mt-3" onClick={handleLogin} />
                     </div>
                 </div>
             </div>
         </div>
-        <footer class=" text-center text-lg-start">
+        <footer className=" text-center text-lg-start">
 
-            <div class="text-center p-3">
+            <div className="text-center p-3">
                 © 2020 Copyright: Gardenergy
             </div>
 
@@ -35,5 +67,18 @@ function Login(){
         </div>
     );
 }
+
+const GetInputValue = (initialValue) =>{
+    const [value, setValue] = useState(initialValue);
+
+    const handleChange = (e) =>{
+        setValue(e.target.value)
+    }
+
+    return{
+        value,
+        onChange: handleChange
+    }
+} 
 
 export default Login;
