@@ -18,10 +18,10 @@ function Acercade() {
                         <br/>
                         <iframe className="img-fluid" src="https://www.youtube.com/embed/eSTveDOtAb8"></iframe>
                         <br/><br/>
-                        <p>Como podemos observar en el video, las plantas son un gran almacenamiento de energia al momento de
-                        producir la fotosintesis, toda ese energia que producen nosotros la podemos utilozar como energia
-                        electrecia que eso nos brindara mayor utilidad al momento prender bombillas o utilizar algun
-                        dispositivo con energia electrica.</p>
+                        <p>Como podemos observar en el video, las plantas son un gran almacenamiento de energía al momento de
+                        producir la fotosíntesis, toda ese energía que producen nosotros la podemos utilizar como energía
+                        eléctrica que eso nos brindará mayor utilidad al momento prender bombillas o utilizar algún
+                        dispositivo con energía eléctrica.</p>
                     </div>
                 </div>
             </div>

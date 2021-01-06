@@ -1,7 +1,7 @@
 import React from 'react';
-import jardinera from '../img/jardinera.png'
-import jardinera2 from '../img/jardinera2.png'
-import jardinera3 from '../img/jardinera3.png'
+import jardinera from '../img/jardienra.jpg';
+import jardinera2 from '../img/jardinera2.jpg';
+import jardinera3 from '../img/jardinera3.jpg';
 import Footer from './Footer';
 import '../styles/productos.css';
 
@@ -11,7 +11,7 @@ function Productos() {
             <div className="container">
                 <div className="row">
                     <div className="col-sm">
-                        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                        <div id="carouselExampleCaptions" class="carousel slide mt-3" data-bs-ride="carousel">
                             <ol class="carousel-indicators">
                                 <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"></li>
                                 <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"></li>
@@ -21,22 +21,19 @@ function Productos() {
                                 <div class="carousel-item active">
                                     <img src={jardinera} class="d-block w-100 img-fluid" alt="..." />
                                     <div class="carousel-caption d-none d-md-block">
-                                        <h5>81 Bolsas</h5>
-                                        <p>Esta jardinera colgable tiene capacidad hasta para 81 plantas.</p>
+
                                     </div>
                                 </div>
                                 <div class="carousel-item">
                                     <img src={jardinera2} class="d-block w-100 img-fluid" alt="..." />
                                     <div class="carousel-caption d-none d-md-block">
-                                        <h5>49 Bolsas</h5>
-                                        <p>Esta jardinera colgable tiene capacidad hasta para 49 plantas.</p>
+
                                     </div>
                                 </div>
                                 <div class="carousel-item">
                                     <img src={jardinera3} class="d-block w-100 img-fluid" alt="..." />
                                     <div class="carousel-caption d-none d-md-block">
-                                        <h5>25 Bolsas</h5>
-                                        <p>Esta jardinera colgable tiene capacidad hasta para 25 plantas.</p>
+
                                     </div>
                                 </div>
                             </div>
@@ -54,12 +51,12 @@ function Productos() {
                         <h3>Lo que ofrecemos</h3>
                         <hr />
                         <h2>PRODUCTO</h2>
-                        <p>Los porductos de gardenergy ayudan a reducir el impacto ambiental y economico, ya que con ayuda de las
-                        jardineras productoras de energia podremos brindar luz electrica a nuestro hogar.
+                        <p>Los porductos de gardenergy ayudan a reducir el impacto ambiental y económico, ya que con ayuda de las
+                        jardineras productoras de energía podremos brindar luz eléctrica a nuestro hogar.
                         Sus investigaciones aspiran a que se pueda producir unos 3,2 watts por metro cuadrado, por lo que una
                         instalación de 100 metros cuadrados podría proveer de energía para una casa que requiera de unos 2.800
-                        kilowatts por año. En conclusion podemos afirmar que este producto de verdad reduce el impacto ambiental,
-                        nuestra economia y ademas de todo hacen que nuestro hogar luzca tan radiante y natural.
+                        kilowatts por año. En conclusión podemos afirmar que este producto de verdad reduce el impacto ambiental,
+                        nuestra economía y además de todo hacen que nuestro hogar luzca tan radiante y natural.
                                 </p>
                     </div>
                 </div>

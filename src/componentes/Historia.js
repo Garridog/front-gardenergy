@@ -1,6 +1,6 @@
 import React from 'react';
 import Footer from './Footer';
-import '../styles/historia.css';
+import '../../src/styles/historia.css';
 
 
 function Historia() {
@@ -17,9 +17,9 @@ function Historia() {
                         <hr/>
                         <h1>Historia</h1>
                         <p>Gardenergy es una empresa dedicada principalmente a generar electricidad por medio de la naturaleza,
-                        la cual es producida a través de la descomposicion de sustancias organicas por microorganismos en la
+                        la cual es producida a través de la descomposicion de sustancias orgánicas por microorganismos en la
                         tierra donde se liberan electrones capturados por nuestro sistema. Nuestro objetivo principal es
-                        economizar el gasto en electricidad, cuidando asi tanto el patrimonio de nuestro clientes como el
+                        economizar el gasto en electricidad, cuidando así tanto el patrimonio de nuestro clientes como el
                         medio ambiente, de tal manera que producimos electricidad a través de la fotosíntesis de las
                         plantas.</p>
                     </div>

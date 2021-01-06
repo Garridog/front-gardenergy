@@ -7,17 +7,18 @@ import Instagram from '../img/instagram-logo.png';
 import Whatsapp from '../img/whatsapp.png';
 
 
-function Index(){
-    return(
+function Index() {
+    return (
         <div className="container">
-             <div id="redessociales">
-                    <a className="smedia facebook" target="_blank" href="https://www.facebook.com/GardenergyMx-102859605080826/?view_public_for=102859605080826">Uno</a>
-                    <a className="smedia twitter" target="_blank" href="https://twitter.com/gardenergy">Dos</a>
-                    <a className="smedia instagram" target="_blank" href="https://www.instagram.com/gardenergy.mx/">Tres</a>
+            <div class="icon-bar">
+                <a href="https://www.facebook.com/GardenergyMx-102859605080826/?view_public_for=102859605080826" target="_blank" class="facebook"><i class="fa fa-facebook"></i></a>
+                <a href="https://twitter.com/gardenergy" target="_blank" class="twitter"><i class="fa fa-twitter"></i></a>
+                <a href="https://www.instagram.com/gardenergy.mx/" target="_blank" class="youtube"><i class="fa fa-instagram"></i></a>
             </div>
+
             <div className="row">
                 <div className="col-sm mt-5">
-                    <img src={logo} className="img-fluid mt-2 rounded-circle position-relative top-50 start-50 translate-middle"/>
+                    <img src={logo} className="img-fluid mt-2 rounded-circle position-relative top-50 start-50 translate-middle" />
                 </div>
             </div>
         </div>

@@ -10,74 +10,78 @@ import Administrador from './Administrador';
 
 function Login(props) {
     const [Loading, setLoading] = useState(false);
-    const[error, setError] = useState(null);
+    const [error, setError] = useState(null);
     const username = GetInputValue("");
     const password = GetInputValue("");
 
     const handleLogin = () => {
         setLoading(true);
         axios
-        .post("http://localhost:4001/validauser", 
-        {username: username.value, password: password.value}).
-        then((response) => {
-            console.log(response.data);    
-            if (response.data == "Usuario Valido"){
-                setUserSession(username.value);
-                window.location.href = '/Administrador'
-            } else {
-                setError("Usuario Invalido");
+            .post("https://gardenergy-back.herokuapp.com/login",
+                { username: username.value, password: password.value }).
+            then((response) => {
+                console.log(response);
+                console.log(response.payload);
+                if (response.data.payload) {
+                    setUserSession(response.data.payload);
+                    window.location.href = '/Administrador'
+                } else {
+                    setError("Usuario Invalido");
+
+                }
                 setLoading(false);
-        }
-        }).catch();
+            }).catch((err)=>{
+                setLoading(false);
+            });
     };
 
 
-    return(
+    return (
         <div>
-        <div className="container mt-5 shadow p-3 mb-5 bg-white rounded lcontainer">
-            <div className="row">
-                <div className="col-sm mt-5">
-                    <img src={Adm} alt="" className="img-fluid"/>
-                </div>
-                <div className="col-sm mt-5 txtlogin">
-                    <h1 className="text-center adm">Administrador</h1>
-                    <hr/>
-                    <h2 className="text-center mt-3">Inicia Sesion</h2>
-                    <div className="mb-3 text-center">
-                        <label htmlFor="exampleInputEmail1" className="form-label">Usuario</label>
-                        <input type="text" className="form-control" {...username} aria-describedby="emailHelp"/>
-                        <label htmlFor="exampleInputPassword1" className="form-label">Contraseña</label>
-                        <input type="password" className="form-control" {...password}/>
-                        <label>{error}</label>
-                        <input type="button" value={Loading ? 'Cargando...' : 'Entrar'}
-                        disabled={Loading} 
-                        className="btn btn-primary mx-auto d-block mt-3" onClick={handleLogin} />
+            <div className="container mt-5 shadow p-3 mb-5 bg-white rounded lcontainer">
+                <div className="row">
+                    <div className="col-sm mt-5">
+                        <img src={Adm} alt="" className="img-fluid" />
+                    </div>
+                    <div className="col-sm mt-5 txtlogin">
+                        <h1 className="text-center adm">Administrador</h1>
+                        <hr />
+                        <h2 className="text-center mt-3">Inicia Sesion</h2>
+                        <div className="mb-3 text-center">
+                            <label className="form-label">Usuario</label>
+                            <input type="text" className="form-control" {...username} aria-describedby="emailHelp" />
+                            <label className="form-label">Contraseña</label>
+                            <input type="password" className="form-control" {...password} />
+                            <label>{error}</label>
+                            <input type="button" value={Loading ? 'Cargando...' : 'Entrar'}
+                                disabled={Loading}
+                                className="btn btn-primary mx-auto d-block mt-3" onClick={handleLogin} />
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <footer className=" text-center text-lg-start">
+            <footer className=" text-center text-lg-start">
 
-            <div className="text-center p-3">
-                © 2020 Copyright: Gardenergy
+                <div className="text-center p-3">
+                    © 2020 Copyright: Gardenergy
             </div>
 
-        </footer>
+            </footer>
         </div>
     );
 }
 
-const GetInputValue = (initialValue) =>{
+const GetInputValue = (initialValue) => {
     const [value, setValue] = useState(initialValue);
 
-    const handleChange = (e) =>{
+    const handleChange = (e) => {
         setValue(e.target.value)
     }
 
-    return{
+    return {
         value,
         onChange: handleChange
     }
-} 
+}
 
 export default Login;

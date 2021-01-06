@@ -4,16 +4,18 @@ import { Redirect } from 'react-router-dom';
 
 function Logout(props) {
 
-    if(getUser() == ""){
+    if(getUser() === ""){
         return <div></div>;
     }
 
     const handleLogout = () =>{
         removeSession();
-        window.location.href = '/Login'
+        window.location.href = '/Index'
     }
 
-    return <div><input className="logout" type="button" onClick={handleLogout} value="salir" /></div>
+    return (
+        <button className="btn btn-danger"  onClick={handleLogout} value="salir">Cerrar Sesión</button>
+    );
 }
 
 export default Logout;

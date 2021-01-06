@@ -35,21 +35,21 @@ function Contacto(){
             <div className="col-sm shadow p-3 mb-5 bg-white rounded mt-5 txtcontacto">
                 <h3>Contacto</h3>
                 <hr/>
-                <form onSubmit={sendEmail} id="contacto" className="form-control">
+                <form onSubmit={sendEmail} id="contacto">
                 <div className="mb-3 mx-auto">
-                    <label htmlFor="exampleFormControlInput1" className="form-label">Nombre Completo</label>
+                    <label className="form-label">Nombre Completo</label>
                     <input type="text" className="form-control" name="name" id="exampleFormControlInput1" placeholder="Introduzca Nombre Completo"/>
                 </div>
                 <div className="mb-3 mx-auto">
-                    <label htmlFor="exampleFormControlInput1" className="form-label">Telefono</label>
+                    <label className="form-label">Telefono</label>
                     <input type="text" className="form-control" name="number" id="exampleFormControlInput1" placeholder="Introduzca Telefono"/>
                 </div>
                 <div className="mb-3 mx-auto">
-                    <label htmlFor="exampleFormControlInput1" className="form-label">Email</label>
+                    <label className="form-label">Email</label>
                     <input type="email" className="form-control" name="email" id="exampleFormControlInput1" placeholder="Introduzca Correo"/>
                   </div>
                   <div className="mb-3 mx-auto">
-                    <label htmlFor="exampleFormControlTextarea1" className="form-label">Solicitud</label>
+                    <label className="form-label">Solicitud</label>
                     <textarea className="form-control" name="message" id="exampleFormControlTextarea1" rows="4"></textarea>
                   </div>
                   <button className="btn btn-success" onClick={()=>mostrarAlerta()}>Enviar</button>
