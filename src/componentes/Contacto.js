@@ -1,7 +1,7 @@
 import React from 'react';
 import Imgcon from '../img/imgcontact.svg';
 import Footer from './Footer';
-//import '../styles/contacto.css';
+import '../styles/contacto.css';
 import emailjs from 'emailjs-com';
 import swal from 'sweetalert';
 
