@@ -24,7 +24,7 @@ function Login(props) {
                 console.log(response.payload);
                 if (response.data.payload) {
                     setUserSession(response.data.payload);
-                    window.location.href = '/Administrador'
+                    window.location.href = './Administrador'
                 } else {
                     setError("Usuario Invalido");
 

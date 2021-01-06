@@ -10,7 +10,7 @@ function Logout(props) {
 
     const handleLogout = () =>{
         removeSession();
-        window.location.href = '/Index'
+        window.location.href = './Index'
     }
 
     return (

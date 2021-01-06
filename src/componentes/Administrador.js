@@ -7,7 +7,7 @@ import '../styles/administrador.css';
 function Administrador(props) {
 
     if (getUser() == "") {
-        window.location.href = '/Index'
+        window.location.href = './Index'
     }
 
     return (
