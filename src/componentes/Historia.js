@@ -1,6 +1,6 @@
 import React from 'react';
 import Footer from './Footer';
-import '../../src/styles/historia.css';
+import './historia.css';
 
 
 function Historia() {
