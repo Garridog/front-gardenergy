@@ -1,10 +1,6 @@
 import React from 'react';
 import logo from '../img/logo.png';
 import '../styles/index.css';
-import Facebook from '../img/facebook-logo.png';
-import Twitter from '../img/twitter.png';
-import Instagram from '../img/instagram-logo.png';
-import Whatsapp from '../img/whatsapp.png';
 
 
 function Index() {
