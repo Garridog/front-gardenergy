@@ -2,7 +2,7 @@ import React from 'react';
 import { Redirect } from 'react-router';
 import { getUser, removeSession } from '../utils/Common';
 import Logout from './logout';
-import '../styles/administrador.css';
+//import '../styles/administrador.css';
 
 function Administrador(props) {
 

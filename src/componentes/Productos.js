@@ -3,7 +3,7 @@ import jardinera from '../img/jardienra.jpg';
 import jardinera2 from '../img/jardinera2.jpg';
 import jardinera3 from '../img/jardinera3.jpg';
 import Footer from './Footer';
-import '../styles/productos.css';
+//import '../styles/productos.css';
 
 function Productos() {
     return (

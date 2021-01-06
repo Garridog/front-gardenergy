@@ -1,6 +1,6 @@
 import React from 'react';
 import Footer from './Footer';
-import '../styles/costos.css';
+//import '../styles/costos.css';
 
 function Costos(){
     return(

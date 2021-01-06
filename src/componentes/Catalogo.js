@@ -10,7 +10,7 @@ import Peperomia from '../img/peperomia.jpg';
 import Espatifilo from '../img/espatifilo.jpg';
 import Espina from '../img/espina.jpg';
 import Footer from './Footer';
-import '../styles/catalogo.css';
+//import '../styles/catalogo.css';
 
 function Catalogo() {
     return (

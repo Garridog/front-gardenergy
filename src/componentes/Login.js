@@ -3,7 +3,7 @@ import { setUserSession } from '../utils/Common';
 import axios from 'axios';
 import { Redirect, withRouter, Link } from 'react-router-dom';
 
-import '../styles/login.css';
+//import '../styles/login.css';
 import Adm from '../img/imgadmin.svg';
 import Footer from './Footer';
 import Administrador from './Administrador';
