@@ -4,8 +4,9 @@ body{
 
 .icon-bar {
   position: fixed;
-  top: 75%;
+  top: 70%;
   left: 0;
+  z-index: 100;
 }
 
 
